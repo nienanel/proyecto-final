@@ -1,0 +1,53 @@
+/**************variables***********/
+@import "estilos-generales";
+
+
+body {
+    background-color: $secondary-color;
+}
+
+header {
+    background-color: $primary-color;
+
+    ul li {
+        font-family: $secondary-font-family;
+        font-size: $normal-font;
+        list-style-type: none;
+
+        a {
+            text-decoration: none;
+            color: $secondary-color;
+
+            &:hover {
+                color: gray;
+            }
+        }
+    }
+
+    .navbar {
+        background-color: $primary-color;
+
+        button {
+            background-color: $secondary-color;
+        }
+
+    }
+}
+
+
+main {
+    h1 {
+        font-family: $primary-font-family;
+        font-size: $large-font;
+        color: $primary-color;
+    }
+}
+
+
+
+
+
+
+
+
+

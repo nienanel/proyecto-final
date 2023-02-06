@@ -1,0 +1,34 @@
+/**************variables***********/
+body {
+  background-color: #FBD6C6;
+}
+
+header {
+  background-color: #EE5F23;
+}
+header ul li {
+  font-family: "Barriecito", cursive;
+  font-size: 2rem;
+  list-style-type: none;
+}
+header ul li a {
+  text-decoration: none;
+  color: #FBD6C6;
+}
+header ul li a:hover {
+  color: gray;
+}
+header .navbar {
+  background-color: #EE5F23;
+}
+header .navbar button {
+  background-color: #FBD6C6;
+}
+
+main h1 {
+  font-family: "Barrio", cursive;
+  font-size: 4rem;
+  color: #EE5F23;
+}
+
+/*# sourceMappingURL=estilo.css.map */
