@@ -16,6 +16,7 @@ header {
   width: 99%;
   border-radius: 3rem;
   position: fixed;
+  z-index: 1;
 }
 header ul li {
   font-family: "Barriecito", cursive;
@@ -28,7 +29,6 @@ header ul li a {
 }
 header ul li a:hover {
   color: #0A1F0A;
-  zoom: 1;
 }
 header .navbar {
   background-color: #EE5F23;
@@ -40,14 +40,14 @@ header .navbar button {
 }
 header .navbar button:hover {
   color: #0A1F0A;
-  opacity: 0.5;
-  filter: alpha(opacity=100);
-  zoom: 1;
+  background-color: black;
+  opacity: 60%;
 }
 header .iconos ul li {
   color: floralwhite;
   display: inline-flex;
   padding: 1rem;
+  margin-right: 2rem;
 }
 
 /*************************************************principal**********************/
@@ -57,6 +57,12 @@ main {
   display: flex;
   flex-flow: column;
   align-content: center;
+}
+main h3 {
+  color: #EE5F23;
+  font-size: 3rem;
+  text-decoration: line-through;
+  translate: -50px 100px;
 }
 main video {
   position: fixed;
@@ -93,19 +99,25 @@ main .prologo p span {
   color: #EE5F23;
 }
 main .tarjetas {
+  background-color: #EE5F23;
+  align-self: flex-end;
   height: 50%;
-  width: 100%;
+  width: 75%;
   margin-top: 10%;
+  margin-right: 2rem;
   gap: 2rem;
+  border: 3px solid #FBD6C6;
+  border-radius: 5px;
+  box-shadow: 7px 4px 2px #FBD6C6;
   opacity: 90%;
 }
 main .tarjetas .noticias {
   transition: ease-in-out;
-  transition-duration: 1s;
+  transition-duration: 200ms;
   box-shadow: 5px 2px 2px 0 black;
 }
 main .tarjetas .noticias:hover {
-  translate: 0 -1rem;
+  translate: 0 -2rem;
 }
 
 /*# sourceMappingURL=estilo.css.map */

@@ -1,5 +1,6 @@
 /**************variables***********/
-@import "estilos-generales";
+@import "estilos-generales"; 
+
 
 /*********************************************general*******************************/
 * {
@@ -19,7 +20,8 @@ header {
     width: 99%;
     border-radius: 3rem;
     position: fixed;
-    
+    z-index: 1;
+
 
 
     ul li {
@@ -34,8 +36,6 @@ header {
 
             &:hover {
                 color: $text-color;
-               
-                zoom: 1;
             }
         }
     }
@@ -50,9 +50,8 @@ header {
 
             &:hover {
                 color: $text-color;
-                opacity: 0.5;
-                filter: alpha(opacity=100);
-                zoom: 1;
+                background-color: black;
+                opacity: 60%;
             }
         }
     }
@@ -61,6 +60,7 @@ header {
         color: floralwhite;
         display: inline-flex;
         padding: 1rem;
+        margin-right: 2rem;
     }
 }
 
@@ -71,6 +71,13 @@ main {
     display: flex;
     flex-flow: column;
     align-content: center;
+
+    h3 {
+        color: $primary-color;
+        font-size: $normal-font;
+        text-decoration: line-through;
+        translate: -50px 100px;
+    }
 
     video {
         position: fixed;
@@ -115,21 +122,27 @@ main {
     }
 
     .tarjetas {
+        background-color: $primary-color;
+        align-self: flex-end;
         height: 50%;
-        width: 100%;
+        width: 75%;
         margin-top: 10%;
+        margin-right: 2rem;
         gap: 2rem;
-        
+        border: 3px solid $secondary-color;
+        border-radius: 5px;
+        box-shadow: 7px 4px 2px $secondary-color;
+
         opacity: 90%;
 
         .noticias {
             transition: ease-in-out;
-            transition-duration: 1s;
+            transition-duration: 200ms;
             box-shadow: 5px 2px 2px 0 black;
-        
+
 
             &:hover {
-                translate: 0 -1rem;
+                translate: 0 -2rem;
             }
         }
     }
