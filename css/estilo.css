@@ -1,21 +1,27 @@
 /**************variables***********/
-/*********************************************general*******************************/
-* {
-  margin: 0;
-  padding: 0;
+h2 {
+  font-family: "Barrio", cursive;
 }
 
-body {
-  background-color: #FBD6C6;
-  overflow-x: hidden;
+h3 {
+  font-family: "Barriecito", cursive;
+  color: #EE5F23;
+  font-size: 3rem;
+  text-decoration: line-through;
 }
 
-/********************************************encabezado*****************************/
+.slider {
+  background-color: #EE5F23;
+  width: 100vw;
+  border-top: 4px solid black;
+  border-bottom: 3px solid black;
+}
+
 header {
   background-color: #EE5F23;
   width: 99%;
   border-radius: 3rem;
-  position: fixed;
+  position: relative;
   z-index: 1;
 }
 header ul li {
@@ -29,6 +35,7 @@ header ul li a {
 }
 header ul li a:hover {
   color: #0A1F0A;
+  text-decoration: underline;
 }
 header .navbar {
   background-color: #EE5F23;
@@ -50,21 +57,42 @@ header .iconos ul li {
   margin-right: 2rem;
 }
 
+/*********************************************general*******************************/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.body {
+  background-color: whitesmoke;
+  overflow-x: hidden;
+}
+
 /*************************************************principal**********************/
-main {
+.index {
   font-family: "Barriecito", cursive;
   width: 100%;
   display: flex;
   flex-flow: column;
   align-content: center;
 }
-main h3 {
+.index h1 {
+  font-family: "Barrio", cursive;
+  font-size: 6rem;
+  color: #EE5F23;
+  text-decoration: line-through white;
+}
+.index h2 {
+  font-family: "Barrio", cursive;
+}
+.index h3 {
+  font-family: "Barriecito", cursive;
   color: #EE5F23;
   font-size: 3rem;
   text-decoration: line-through;
   translate: -50px 100px;
 }
-main video {
+.index video {
   position: fixed;
   z-index: -1;
   right: 0;
@@ -73,32 +101,25 @@ main video {
   min-width: 100%;
   min-height: 100%;
 }
-main .intro {
+.index .intro {
   font-size: 3rem;
   text-align: center;
   margin-top: 10%;
 }
-main .intro h1 {
-  font-family: "Barrio", cursive;
-  font-size: 6rem;
-  color: #EE5F23;
-  text-decoration: line-through white;
-}
-main .intro h2 {
-  color: #EE5F23;
-  text-decoration: underline;
-}
-main .prologo {
+.index .prologo {
   margin-top: 15%;
 }
-main .prologo p {
+.index .prologo p {
   color: #FBD6C6;
   font-size: 3rem;
 }
-main .prologo p span {
+.index .prologo p span {
   color: #EE5F23;
 }
-main .tarjetas {
+.index .news {
+  background-color: #FBD6C6;
+}
+.index .tarjetas {
   background-color: #EE5F23;
   align-self: flex-end;
   height: 50%;
@@ -111,13 +132,47 @@ main .tarjetas {
   box-shadow: 7px 4px 2px #FBD6C6;
   opacity: 90%;
 }
-main .tarjetas .noticias {
+.index .tarjetas .noticias {
   transition: ease-in-out;
   transition-duration: 200ms;
   box-shadow: 5px 2px 2px 0 black;
 }
-main .tarjetas .noticias:hover {
+.index .tarjetas .noticias:hover {
   translate: 0 -2rem;
+}
+
+/********************sposts********************/
+.spots-main h1 {
+  color: #EE5F23;
+  font-size: 6rem;
+}
+.spots-main h4 {
+  color: #EE5F23;
+}
+.spots-main h2 {
+  color: #EE5F23;
+  text-decoration: line-through;
+}
+.spots-main p {
+  font-size: 2rem;
+}
+.spots-main i {
+  color: #EE5F23;
+}
+.spots-main .bari {
+  border: 5px solid #EE5F23;
+  box-shadow: 6px 5px 2px 0 #FBD6C6;
+  border-radius: 5px;
+}
+.spots-main .mendoza {
+  border: 5px solid #EE5F23;
+  box-shadow: 0 2px 5px 6px #FBD6C6;
+  border-radius: 5px;
+}
+.spots-main .chile {
+  border: 5px solid #EE5F23;
+  box-shadow: 6px 5px 2px 0 #FBD6C6;
+  border-radius: 5px;
 }
 
 /*# sourceMappingURL=estilo.css.map */

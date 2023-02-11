@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spots</title>
+    <!------------------------css------------------------------>
+    <link rel="stylesheet" href="../css/estilo.css">
+    <!--------------------- fuentes --------------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barriecito&family=Barrio&display=swap" rel="stylesheet">
+    <title>index</title>
+    <!-----------------------bootstrap-------------------------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-----------------------iconos---------------------------->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!------------------------animate-------------------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body class="body">
+
+    <!---------------------- header ----------------------->
+
+    <header class="header ms-2 me-2 mt-0 mb-2 d-inline-flex" data-aos="fade-right" data-aos-offset="300"
+        data-aos-easing="ease-in-sine">
+        <div class="collapse" id="navbarToggleExternalContent">
+            <div class="p-5 text-center d-flex">
+                <ul class="container-fluid">
+                    <li><a href="../index.html">home</a></li>
+                    <li><a href="">la empresa</a></li>
+                    <li><a href="spots.html">spots</a></li>
+                    <li><a class="text-decoration-underline" href="">academia <span
+                                class="fs-6 text-center">(new)</span></a></li>
+                    <li><a href="">contacto</a></li>
+                </ul>
+            </div>
+        </div>
+        <nav class="navbar mb-3">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+        <div class="iconos container-fluid d-flex justify-content-end">
+            <ul>
+                <li><a href="https://www.twitter.com" target="_blank"><i class="bi bi-twitter"></i></a></li>
+                <li><a href="https://www.facebook.com" target="_blank"><i class="bi bi-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com" target="_blank"><i class="bi bi-instagram"></i></a></li>
+                <li> <a href="https://www.windy.com/?-41.144,-71.301,5" target="_blank"><i
+                            class="bi bi-thermometer-snow"></i></a></li>
+                <li><a href="mailto:sonesemanuel@gmai.com" target="_blank"><i class="bi bi-envelope-fill" ;"></i></a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+
+    <!---------------------- main ----------------------->
+
+    <main class="spots-main">
+
+        <div class="intro-spots text-center mt-5">
+            <h1>spots</h1>
+            <h3 class="mb-5">sabes donde queres tu proxima aventura?</h3>
+        </div>
+
+
+        <!---------------------- slider ----------------------->
+
+        <div id="carouselExampleCaptions" class=" slider carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../img/carrusel-1.jpg" class="d-block w-100" alt="foto de bari">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h4>bariloche</h4>
+                        <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/carrusel-2.jpg" class="d-block w-100" alt="foto de mendoza">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h4>mendoza</h4>
+                        <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/carrusel-3.jpg" class="d-block w-100" alt="foto volcan">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h4>chile</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae numquam iusto repellendus
+                            deserunt. Officia consectetur maxime a eos asperiores reiciendis nisi nesciunt, quasi
+                            accusantium sunt autem facilis, voluptatem commodi perspiciatis?</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+        </div>
+
+        <!---------------------- spots ------------------------->
+
+
+        <div class="row text-center mt-5 p-5">
+            <div class="bari col">
+                <h2>bariloche</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ipsa repellat temporibus, ipsum,
+                    amet
+                    nihil aliquid adipisci laudantium nobis minima magni culpa! Modi veritatis dolore quae cupiditate
+                    libero, esse cum.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, molestias? Ratione distinctio iusto
+                    eligendi sint velit sed provident tenetur, adipisci nesciunt quasi consequuntur harum vero accusamus
+                    dignissimos blanditiis fugit nihil.</p>
+
+                <i class="bi bi-snow3"> calidad ñieve</i>
+                <i class="bi bi-binoculars-fill">vistas</i>
+                <i class="bi bi-cloud-fill">poco sol</i>
+
+            </div>
+            <div class="col">
+                <img class="foto-bari border border rounded" src="../img/bariloche1.jpg" alt="foto vista lago">
+            </div>
+
+
+            <div class="row text-center p-5 d-flex flex-row-reverse">
+                <div class=" mendoza col">
+                    <h2>mendoza</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ipsa repellat temporibus, ipsum,
+                        amet
+                        nihil aliquid adipisci laudantium nobis minima magni culpa! Modi veritatis dolore quae
+                        cupiditate
+                        libero, esse cum.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, molestias? Ratione distinctio
+                        iusto
+                        eligendi sint velit sed provident tenetur, adipisci nesciunt quasi consequuntur harum vero
+                        accusamus
+                        dignissimos blanditiis fugit nihil.</p>
+
+                    <i class="bi bi-snow"> poca ñieve</i>
+                    <i class="bi bi-exclamation-circle">altitud</i>
+                    <i class="bi bi-brightness-high-fill">mucho sol</i>
+                </div>
+                <div class="col">
+                    <img class="foto-mendoza border border rounded" src="../img/mendoza1.jpg" alt="foto sol">
+                </div>
+
+                <div class="row text-center p-5">
+                    <div class=" chile col">
+                        <h2>chile</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ipsa repellat temporibus,
+                            ipsum,
+                            amet
+                            nihil aliquid adipisci laudantium nobis minima magni culpa! Modi veritatis dolore quae
+                            cupiditate
+                            libero, esse cum.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, molestias? Ratione distinctio
+                            iusto
+                            eligendi sint velit sed provident tenetur, adipisci nesciunt quasi consequuntur harum vero
+                            accusamus
+                            dignissimos blanditiis fugit nihil.</p>
+
+                        <i class="bi bi-snow2">buena ñieve</i>
+                        <i class="bi bi-binoculars-fill">vistas</i>
+                        <i class="bi bi-cloud-drizzle">humedo</i>
+                    </div>
+                    <div class="col">
+                        <img class="foto-chile border border rounded ms-5" src="../img/chile1.jpg" alt="foto cumbre">
+                    </div>
+
+
+
+
+
+
+
+
+    </main>
+
+
+
+
+
+
+
+    <!---------------------- scripts ----------------------->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>

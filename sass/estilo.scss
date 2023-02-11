@@ -1,5 +1,5 @@
 /**************variables***********/
-@import "estilos-generales","carrusel"; 
+@import "estilos-generales", "carrusel", "header";
 
 
 /*********************************************general*******************************/
@@ -8,71 +8,33 @@
     padding: 0;
 }
 
-body {
-    background-color: $secondary-color;
+.body {
+    background-color: whitesmoke;
     overflow-x: hidden;
 }
 
-/********************************************encabezado*****************************/
-
-header {
-    background-color: $primary-color;
-    width: 99%;
-    border-radius: 3rem;
-    position: fixed;
-    z-index: 1;
-
-
-
-    ul li {
-        font-family: $secondary-font-family;
-        font-size: $small-font;
-        list-style-type: none;
-
-
-        a {
-            text-decoration: none;
-            color: $secondary-color;
-
-            &:hover {
-                color: $text-color;
-            }
-        }
-    }
-
-    .navbar {
-        background-color: $primary-color;
-        margin-left: 5rem;
-
-        button {
-            background-color: $secondary-color;
-            position: fixed;
-
-            &:hover {
-                color: $text-color;
-                background-color: black;
-                opacity: 60%;
-            }
-        }
-    }
-
-    .iconos ul li {
-        color: floralwhite;
-        display: inline-flex;
-        padding: 1rem;
-        margin-right: 2rem;
-    }
-}
 
 /*************************************************principal**********************/
-main {
+.index {
     font-family: $secondary-font-family;
     width: 100%;
     display: flex;
     flex-flow: column;
     align-content: center;
 
+    h1 {
+        font-family: $primary-font-family;
+        font-size: $large-font;
+        color: $primary-color;
+        text-decoration: line-through white;
+    }
+
+    h2 {
+        font-family: $primary-font-family;
+    }
+
     h3 {
+        font-family: $secondary-font-family;
         color: $primary-color;
         font-size: $normal-font;
         text-decoration: line-through;
@@ -87,25 +49,12 @@ main {
         top: 0;
         min-width: 100%;
         min-height: 100%;
-
     }
 
     .intro {
         font-size: $normal-font;
         text-align: center;
         margin-top: 10%;
-
-        h1 {
-            font-family: $primary-font-family;
-            font-size: $large-font;
-            color: $primary-color;
-            text-decoration: line-through white;
-        }
-
-        h2 {
-            color: $primary-color;
-            text-decoration: underline;
-        }
     }
 
     .prologo {
@@ -119,6 +68,10 @@ main {
                 color: $primary-color;
             }
         }
+    }
+
+    .news {
+        background-color: $secondary-color;
     }
 
     .tarjetas {
@@ -140,10 +93,55 @@ main {
             transition-duration: 200ms;
             box-shadow: 5px 2px 2px 0 black;
 
-
             &:hover {
                 translate: 0 -2rem;
             }
         }
+    }
+}
+
+/********************sposts********************/
+
+.spots-main {
+
+    h1 {
+        color: $primary-color;
+        font-size: $large-font;
+    }
+
+    h4 {
+        color: $primary-color;
+    }
+
+    h2 {
+        color: $primary-color;
+        text-decoration: line-through;
+
+    }
+
+    p {
+        font-size: $small-font;
+    }
+
+    i {
+        color: $primary-color;
+    }
+
+    .bari {
+        border: 5px solid $primary-color;
+        box-shadow: 6px 5px 2px 0 $secondary-color;
+        border-radius: 5px;
+    }
+
+    .mendoza {
+        border: 5px solid $primary-color;
+        box-shadow: 0 2px 5px 6px $secondary-color;
+        border-radius: 5px;
+    }
+
+    .chile {
+        border: 5px solid $primary-color;
+        box-shadow: 6px 5px 2px 0 $secondary-color;
+        border-radius: 5px;
     }
 }
