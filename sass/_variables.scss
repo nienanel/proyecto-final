@@ -1,0 +1,14 @@
+/************mixin***************/
+
+@mixin enlases {
+    font-family: $secondary-font-family;
+    font-size: $small-font -1em;
+    text-decoration: none;
+    color: $secondary-color;
+}
+
+@mixin tarjetas {
+    border: 3px solid $secondary-color;
+    border-radius: 5px;
+    box-shadow: 7px 4px 2px $secondary-color;
+}

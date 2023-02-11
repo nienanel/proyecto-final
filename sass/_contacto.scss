@@ -1,0 +1,37 @@
+/*************contacto************/
+.contenedor {
+    background-color: $primary-color;
+    @include tarjetas;
+
+.campo {
+	display: block;
+	width: 50%;
+	padding: 10px;
+	margin: 10px auto;
+}
+.boton {
+	color: $text-color;
+	background-color: $primary-color;
+	padding: 10px;
+	text-transform: uppercase;
+	font-weight: bold;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+    transition: all ease-in-out .5s;
+
+    &:hover {
+        color: $secondary-color;
+    }
+}
+}
+
+.ubicacion {
+    .visitanos {
+        margin-left: 2rem;
+        background-color: $primary-color;
+        @include tarjetas;
+        width: 50%;
+        
+    }
+}

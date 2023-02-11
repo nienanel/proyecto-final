@@ -4,6 +4,7 @@ header {
     border-radius: 3rem;
     position: relative;
     z-index: 2;
+    
 
     ul li {
         font-family: $secondary-font-family;
@@ -13,6 +14,7 @@ header {
         a {
             text-decoration: none;
             color: $secondary-color;
+            transition: all ease-in-out .5s;
 
             &:hover {
                 color: $text-color;

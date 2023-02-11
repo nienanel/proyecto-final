@@ -1,0 +1,28 @@
+/*************noticias***********/
+
+.news {
+    background-color: $secondary-color;
+}
+
+.tarjetas {
+    background-color: $primary-color;
+    align-self: flex-end;
+    height: 50%;
+    width: 75%;
+    margin-top: 10%;
+    margin-right: 2rem;
+    gap: 2rem;
+   @include tarjetas;
+
+    opacity: 90%;
+
+    .noticias {
+        transition: ease-in-out;
+        transition-duration: 200ms;
+        box-shadow: 5px 2px 2px 0 black;
+
+        &:hover {
+            translate: 0 -2rem;
+        }
+    }
+}

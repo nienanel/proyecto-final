@@ -1,17 +1,5 @@
 /**************variables***********/
-@import "estilos-generales", "carrusel", "header";
-
-
-/*********************************************general*******************************/
-* {
-    margin: 0;
-    padding: 0;
-}
-
-.body {
-    background-color: #FDE9D8;
-    overflow-x: hidden;
-}
+@import "base", "estilos-generales", "variables", "carrusel", "header","video", "noticias", "contacto", "footer";
 
 
 /*************************************************principal**********************/
@@ -69,35 +57,6 @@
             }
         }
     }
-
-    .news {
-        background-color: $secondary-color;
-    }
-
-    .tarjetas {
-        background-color: $primary-color;
-        align-self: flex-end;
-        height: 50%;
-        width: 75%;
-        margin-top: 10%;
-        margin-right: 2rem;
-        gap: 2rem;
-        border: 3px solid $secondary-color;
-        border-radius: 5px;
-        box-shadow: 7px 4px 2px $secondary-color;
-
-        opacity: 90%;
-
-        .noticias {
-            transition: ease-in-out;
-            transition-duration: 200ms;
-            box-shadow: 5px 2px 2px 0 black;
-
-            &:hover {
-                translate: 0 -2rem;
-            }
-        }
-    }
 }
 
 /********************sposts********************/
@@ -134,19 +93,16 @@
     }
 
 
-.mendoza {
-    border: 5px solid $primary-color;
-    box-shadow: 0 2px 5px 6px $secondary-color;
-    border-radius: 5px;
+    .mendoza {
+        border: 5px solid $primary-color;
+        box-shadow: 0 2px 5px 6px $secondary-color;
+        border-radius: 5px;
+    }
+
+    .chile {
+        border: 5px solid $primary-color;
+        box-shadow: 6px 5px 2px 0 $secondary-color;
+        border-radius: 5px;
+    }
+
 }
-
-.chile {
-    border: 5px solid $primary-color;
-    box-shadow: 6px 5px 2px 0 $secondary-color;
-    border-radius: 5px;
-}
-
-}
-
-
-

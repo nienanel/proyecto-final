@@ -20,27 +20,29 @@
     <!------------------------animate-------------------------->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <meta name="description" content="web de empresa de expediciones de ski de travesia">
 </head>
 
 <body class="body">
 
-    <header class="header ms-2 me-2 mt-0 mb-2 d-inline-flex" data-aos="fade-right"
-    data-aos-offset="300"
-    data-aos-easing="ease-in-sine">
-        <div class="collapse" id="navbarToggleExternalContent">
+    <!------------------------header-------------------------->
+
+    <header class="header ms-2 me-2 mt-0 mb-2 d-inline-flex" data-aos="fade-right" data-aos-offset="300"
+        data-aos-easing="ease-in-sine" id="arriba">
+        <div class="collapse w-100 " id="navbarToggleExternalContent">
             <div class="p-4">
-                <ul class="container-fluid">
-                    <li><a href="">home</a></li>
-                    <li><a href="">la empresa</a></li>
-                    <li><a href="html/spots.html">spots</a></li>
+                <ul class="container-fluid d-flex flex-wrap">
+                    <li><a class="px-3" href="index.html">home</a></li>
+                    <li><a class="px-3" href="">la empresa</a></li>
+                    <li><a class="px-3" href="html/spots.html">spots</a></li>
                     <li><a class="text-decoration-underline" href="">academia <span
                                 class="fs-6 text-center">(new)</span></a></li>
-                    <li><a href="">contacto</a></li>
+                    <li><a class="px-3" href="#contacto">contacto</a></li>
                 </ul>
             </div>
         </div>
         <nav class="navbar mb-3">
-            <div class="container-fluid">
+            <div class=" menu container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -57,15 +59,19 @@
                 <li><a href="https://www.instagram.com" target="_blank"><i class="bi bi-instagram"></i></a></li>
                 <li> <a href="https://www.windy.com/?-41.144,-71.301,5" target="_blank"><i
                             class="bi bi-thermometer-snow"></i></a></li>
-                <li><a href="mailto:sonesemanuel@gmai.com" target="_blank"><i class="bi bi-envelope-fill" ;"></i></a>
+                <li><a href="mailto:sonesemanuel@gmai.com" target="_blank"><i class="bi bi-envelope-fill"></i></a>
                 </li>
             </ul>
         </div>
     </header>
 
+    <!------------------------main-------------------------->
+
     <main class="index">
 
         <video src="video/mattrthorne.mp4" autoplay loop></video>
+
+        <!---------------hero----------------->
 
         <div class="intro container-fluid">
             <h1 class="animate__animated animate__pulse">andes freeride</h1>
@@ -80,8 +86,10 @@
                 del otoño <span class="text-decoration-underline ">Gaston Rébuffat</span></p>
         </div>
 
+        <!--------- noticias ---------->
+
         <span>
-            <h3 class=" news d-flex flex-row-reverse col-6">last news!</h3>
+            <h3 class=" news d-flex flex-row-reverse col-6">ultimas novedades!</h3>
         </span>
         <section data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-out"
             class="tarjetas d-flex justify-content-center">
@@ -111,16 +119,70 @@
         </section>
     </main>
 
+    <!------------------- contacto ----------------->
+    <div class="d-flex row">
+        <section id="contacto" class="contenedor col-6 text-center mt-5" data-aos="fade-right" data-aos-duration="1000"
+            data-aos-easing="ease-in-out">
+            <h2>contactanos!</h2>
+            <form class="formulario">
+
+                <div class="contenedorInput">
+                    <input class="campo" type="text" placeholder="nombre">
+                    <input class="campo" type="text" placeholder="apellido">
+                    <input class="campo" type="email" placeholder="Ingrese su email">
+                </div>
+                <textarea class="campo" name="mensaje" id="mensaje" cols="30" rows="10"
+                    placeholder="contanos!"></textarea>
+                <input class="boton" type="submit">
+                <input class="boton" type="reset">
+            </form>
+        </section>
+
+        <section class="ubicacion col text-center mt-5">
+
+            <h2 class="visitanos">donde estamos</h2>
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12026.629451683653!2d-71.46209048838753!3d-41.09833242319433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961a76c58aa7aa73%3A0x8b196f1c1e9c610f!2sLa%20Finca%20del%2013!5e0!3m2!1ses-419!2sar!4v1676126296232!5m2!1ses-419!2sar"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    </div>
+    <!------------------------------------- footer ---------------------------->
+    <footer class="footer d-flex  justify-content-between mt-5 text-center">
+
+        <div class="legales mt-1">
+            <p>todos los derechos reservdos <span><i class="bi bi-r-circle-fill"></i></span></p>
+            <p>web developer <span class="fw-bold">Sones Emanuel</span></p>
+            <p>Bariloche, Rio Negro, Patagonia, Argentina</p>
+        </div>
+        <div>
+            <ul class="redes d-flex flex-row text-center>
+                <li><a href=" https://www.twitter.com" target="_blank"><i class="bi bi-twitter p-2"
+                    style="font-size: 2rem;"></i></a></li>
+                <li><a href="https://www.facebook.com" target="_blank"><i class="bi bi-facebook p-2"
+                            style="font-size: 2rem;"></i></a></li>
+                <li><a href="https://www.instagram.com" target="_blank"><i class="bi bi-instagram p-2"
+                            style="font-size: 2rem;"></i></a></li>
+                <li><a href="https://open.spotify.com/playlist/6eIXafyYTDmIqXsjbliYhH?si=e789ce3f29064f5e"
+                        target="_blank"><i class="bi bi-spotify p-2" style="font-size: 2rem;"></i></a></li>
+                <li><a href="mailto:sonesemanuel@gmai.com" target="_blank"><i class="bi bi-envelope-fill p-2"
+                            style="font-size: 2rem;"></i></a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="links p-1">
+            <ul>
+                <li><a href="">faq</a></li>
+                <li><a href="">mapa de sitio</a></li>
+                <li><a href="">terminos y condiciones</a></li>
+                <li><a href="#arriba"><i class="bi bi-house-door-fill" style="font-size: 2rem;"></i></a></li>
+            </ul>
+        </div>
 
 
-
-
-
-
-
-
-
-
+    </footer>
 
     <!---------------------- scripts ----------------------->
 

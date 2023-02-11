@@ -1,0 +1,52 @@
+.footer {
+    background-color: $primary-color;
+    font-size: $small-font -1rem;
+    padding: 2rem;
+    width: 100%;
+    height: 10rem;
+    position: relative;
+    bottom: 0;
+    border-top: 4px solid $text-color;
+
+    .legales {
+        color: $text-color;
+    }
+
+    .redes {
+
+        li {
+            list-style-type: none;
+
+            a {
+                color: $text-color;
+                display: flex;
+                justify-content: center;
+                transition: all ease-in-out 1s;
+
+                &:hover {
+                    color: $secondary-color;
+                    translate: 0 -1rem;
+                }
+            }
+        }
+    }
+
+    .links {
+
+        ul {
+            list-style-type: none;
+
+            li {
+                a {
+                    @include enlases;
+                    text-transform: uppercase;
+
+                    &:hover {
+                        color: $text-color;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
