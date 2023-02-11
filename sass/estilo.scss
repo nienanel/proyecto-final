@@ -9,7 +9,7 @@
 }
 
 .body {
-    background-color: whitesmoke;
+    background-color: #FDE9D8;
     overflow-x: hidden;
 }
 
@@ -133,15 +133,20 @@
         border-radius: 5px;
     }
 
-    .mendoza {
-        border: 5px solid $primary-color;
-        box-shadow: 0 2px 5px 6px $secondary-color;
-        border-radius: 5px;
-    }
 
-    .chile {
-        border: 5px solid $primary-color;
-        box-shadow: 6px 5px 2px 0 $secondary-color;
-        border-radius: 5px;
-    }
+.mendoza {
+    border: 5px solid $primary-color;
+    box-shadow: 0 2px 5px 6px $secondary-color;
+    border-radius: 5px;
 }
+
+.chile {
+    border: 5px solid $primary-color;
+    box-shadow: 6px 5px 2px 0 $secondary-color;
+    border-radius: 5px;
+}
+
+}
+
+
+

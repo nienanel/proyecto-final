@@ -22,7 +22,7 @@ header {
   width: 99%;
   border-radius: 3rem;
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 header ul li {
   font-family: "Barriecito", cursive;
@@ -64,7 +64,7 @@ header .iconos ul li {
 }
 
 .body {
-  background-color: whitesmoke;
+  background-color: #FDE9D8;
   overflow-x: hidden;
 }
 
