@@ -104,5 +104,19 @@
         box-shadow: 6px 5px 2px 0 $secondary-color;
         border-radius: 5px;
     }
+}
 
+/*********** empresa *************/
+
+main {
+    .historia-empresa {
+        background-color: $primary-color;
+        .titulo-somos {
+            h1 {
+                color: $primary-color;
+                font-family: $primary-font-family;
+            }
+           
+        }
+    }
 }

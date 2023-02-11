@@ -268,4 +268,13 @@ video {
   border-radius: 5px;
 }
 
+/*********** empresa *************/
+main .historia-empresa {
+  background-color: #EE5F23;
+}
+main .historia-empresa .titulo-somos h1 {
+  color: #EE5F23;
+  font-family: "Barrio", cursive;
+}
+
 /*# sourceMappingURL=estilo.css.map */
