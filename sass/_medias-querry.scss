@@ -1,0 +1,20 @@
+/**************** medias quarry **************/
+
+@media (max-width: 600px) {
+
+    /********** header *********/
+    header {
+        .logo {
+            display: none;
+        }
+    }
+
+    /********** footer *************/
+ 
+    .footer {
+        .legales {
+            display: none;
+        }
+    }
+
+}

@@ -8,7 +8,37 @@
 }
 
 @mixin tarjetas {
-    border: 3px solid $secondary-color;
+    border: 3px solid $primary-color;
     border-radius: 5px;
-    box-shadow: 7px 4px 2px $secondary-color;
+    box-shadow: 7px 4px 2px 1px $text-color;
+}
+
+@mixin h1 {
+    color: $secondary-color;
+    font-family: $primary-font-family;
+    font-size: $large-font;
+}
+
+@mixin h2 {
+    color: $text-color;
+    text-decoration: underline;
+    font-family: $primary-font-family;
+}
+
+@mixin h3 {
+    font-family: $secondary-font-family;
+    color: $secondary-color;
+    font-size: $normal-font;
+    text-decoration: underline;
+}
+
+@mixin h4 {
+    font-family: $secondary-font-family;
+    color: $text-color;
+}
+
+@mixin p {
+    color: $primary-color;
+    font-weight: 400;
+    font-size: $small-font;
 }

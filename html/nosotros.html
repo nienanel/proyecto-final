@@ -27,50 +27,64 @@
 
     <!---------------------- header ----------------------->
 
-    <header class="header ms-2 me-2 mt-0 mb-2 d-inline-flex" data-aos="fade-right" data-aos-offset="300"
-        data-aos-easing="ease-in-sine">
-        <div class="collapse w-100 " id="navbarToggleExternalContent">
-            <div class="p-4">
-                <ul class="container-fluid d-flex flex-wrap">
-                    <li><a class="px-3" href="../index.html">home</a></li>
-                    <li><a class="px-3" href="nosotros.html">la empresa</a></li>
-                    <li><a class="px-3" href="spots.html">spots</a></li>
-                    <li><a class="text-decoration-underline" href="">academia <span
-                                class="fs-6 text-center">(new)</span></a></li>
-                    <li><a class="px-3" href="../index.html">contacto</a></li>
-                </ul>
-            </div>
-        </div>
-        <nav class="navbar mb-3">
-            <div class="container-fluid">
+    <header class="header container-fluid row">
+        <h1 class="logo animate__heartBeat mt-2 ms-5 col-4 col">andes freeride</h1>
+        <nav class="menu navbar navbar-expand-lg col">
+            <div class="container-fluid" role="navigation">
+                <a class="navbar-brand" href="#"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav mx-automx-auto ml-auto">
+                        <ul class="navbar-nav container-fluid col">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="nosotros.html">nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="spots.html">spots</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="academia.html">academia</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html">reservas</a>
+                            </li>
+                        </ul>
+                </div>
             </div>
         </nav>
-        <div class="iconos container-fluid d-flex justify-content-end">
+        <div class="iconos col mt-3 p-2">
             <ul>
-                <li><a href="https://www.twitter.com" target="_blank"><i class="bi bi-twitter"></i></a></li>
-                <li><a href="https://www.facebook.com" target="_blank"><i class="bi bi-facebook"></i></a></li>
-                <li><a href="https://www.instagram.com" target="_blank"><i class="bi bi-instagram"></i></a></li>
-                <li> <a href="https://www.windy.com/?-41.144,-71.301,5" target="_blank"><i
+                <li><a class="px-2" href="https://www.twitter.com" target="_blank"><i class="bi bi-twitter"></i></a>
+                </li>
+                <li><a class="px-2" href="https://www.facebook.com" target="_blank"><i class="bi bi-facebook"></i></a>
+                </li>
+                <li><a class="px-2" href="https://www.instagram.com" target="_blank"><i class="bi bi-instagram"></i></a>
+                </li>
+                <li> <a class="px-2" href="https://www.windy.com/?-41.144,-71.301,5" target="_blank"><i
                             class="bi bi-thermometer-snow"></i></a></li>
-                <li><a href="mailto:sonesemanuel@gmai.com" target="_blank"><i class="bi bi-envelope-fill" ;"></i></a>
+                <li><a class="px-2" href="mailto:sonesemanuel@gmai.com" target="_blank"><i
+                            class="bi bi-envelope-fill"></i></a>
                 </li>
             </ul>
         </div>
     </header>
 
-    <main class="main">
+    <main class="main-nosotros">
+
+        <div class="titulo-somos mt-5 mb-3 text-center">
+            <h1>de donde venimos?<h1>
+        </div>
 
         <section class="historia-empresa text-center">
-            <div class="titulo-somos mt-5 mb-3">
-                <h1>andes freeride</h1>
-                <h3>de donde venimos?<h3>
-            </div>
-            <p>Dalbello, fundada en 1974 por el genuino zapatero Signor Sandro Dalbello, es la marca italiana experta en
+            <div>
+            <p class="mt-5 ms-1 me-1 p-1">Dalbello, fundada en 1974 por el genuino zapatero Signor Sandro Dalbello, es la marca italiana experta en
                 botas de esquí. A día de hoy, tanto las instalaciones de I+D como las de producción están situadas en la
                 cercanía de las montañas Dolomitas en Asolo/Treviso y forman parte del distrito «Montebelluna
                 SportSystem», que es la meca del desarrollo y la ingeniería de las botas de esquí. Una característica
@@ -84,13 +98,14 @@
                 Hoy en día, Dalbello es uno de los pocos fabricantes de botas de esquí que sigue produciendo en Italia.
                 Casi todos los componentes de nuestras botas de esquí se fabrican directamente en Asolo, en el distrito
                 de sistemas deportivos de Asolo y Montebelluna o a través de proveedores europeos.</p>
+            </div>
 
             <img class="mt-5" src="../img/empresa1.jpg" alt="foto montaña cepia">
         </section>
 
-        <section class="guias mt-5">
+        <section class="guias container-fluid row text-center mt-5 mb-5">
             <h2>nuestros guias</h2>
-            <div class="guia1">
+            <div class="guia1 col-6">
                 <h4>Sones Emanuel</h4>
                 <p>co-fundador y super raider</p>
                 <p>Mi relación con el mundo de la nieve comienza en la década de los 70 en el Puerto de Navacerrada. En
@@ -107,7 +122,7 @@
                     y montaña.</p>
                 <img src="../img/guia1.jpg" alt="foto del guia fachero">
             </div>
-            <div class="guia2">
+            <div class="guia2 col-6">
                 <h4>Gaston "gato" Sedran</h4>
                 <p>co-fundador y sabe bocha</p>
                 <p>Me inicié en el mundo del esquí en la década de los 80 en el Pirineo oscense. Desde entonces vivo
@@ -117,7 +132,7 @@
                     estado puro, turismo y deporte.</p>
                 <img src="../img/guia2.jpg" alt="foto de otro guia">
             </div>
-            <div class="guia3">
+            <div class="guia3 col-6 mt-3">
                 <h4>Arriel "rasta" Billud</h4>
                 <p>asistente copado</p>
                 <p>MMi perfil profesional está ligado al mundo de la tecnología, donde desde hace más de 20 años estoy
@@ -126,7 +141,7 @@
                     Paradise, pasión por la nieve..</p>
                 <img src="../img/guia3.jpg" alt="foto de otro otro guia">
             </div>
-            <div class="guia4">
+            <div class="guia4 col-6">
                 <h4>Daniel Alonso</h4>
                 <p>tesorero y empresario crypto</p>
                 <p>manejo la oficina y los numeros. pero tambien puedo salir a dar una vuelta cuando me dejan</p>
@@ -135,24 +150,41 @@
 
         </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     </main>
 
+    <!------------------------------------- footer ---------------------------->
+    <footer class="footer d-flex  justify-content-between mt-5 text-center">
+
+        <div class="legales mt-1">
+            <p>todos los derechos reservdos <span><i class="bi bi-r-circle-fill"></i></span></p>
+            <p>web developer <span class="fw-bold">Sones Emanuel</span></p>
+            <p>Bariloche, Rio Negro, Patagonia, Argentina</p>
+        </div>
+        <div>
+            <ul class="redes d-flex flex-row text-center>
+                <li><a href=" https://www.twitter.com" target="_blank"><i class="bi bi-twitter p-2"
+                    style="font-size: 2rem;"></i></a></li>
+                <li><a href="https://www.facebook.com" target="_blank"><i class="bi bi-facebook p-2"
+                            style="font-size: 2rem;"></i></a></li>
+                <li><a href="https://www.instagram.com" target="_blank"><i class="bi bi-instagram p-2"
+                            style="font-size: 2rem;"></i></a></li>
+                <li><a href="https://open.spotify.com/playlist/6eIXafyYTDmIqXsjbliYhH?si=e789ce3f29064f5e"
+                        target="_blank"><i class="bi bi-spotify p-2" style="font-size: 2rem;"></i></a></li>
+                <li><a href="mailto:sonesemanuel@gmai.com" target="_blank"><i class="bi bi-envelope-fill p-2"
+                            style="font-size: 2rem;"></i></a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="links p-1">
+            <ul>
+                <li><a href="">faq</a></li>
+                <li><a href="">mapa de sitio</a></li>
+                <li><a href="">terminos y condiciones</a></li>
+                <li><a href="../index.html"><i class="bi bi-house-door-fill" style="font-size: 2rem;"></i></a></li>
+            </ul>
+        </div>
+    </footer>
 
     <!----------------------- scripts ----------------------->
 

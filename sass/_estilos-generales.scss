@@ -1,7 +1,7 @@
 //*******************colores***************//
-$primary-color: #EE5F23;
-$secondary-color: #FBD6C6;
-$text-color: black;
+$primary-color: black;
+$secondary-color: #EE5F23;
+$text-color: #3EB9A0;
 
 //******************fuentes*****************//
 $primary-font-family: 'Barrio', cursive;
@@ -17,7 +17,7 @@ h2 {
 
 h3 {
     font-family: $secondary-font-family;
-    color: $primary-color;
+    color: $secondary-color;
     font-size: $normal-font;
-    text-decoration: line-through;
+    text-decoration: underline;
 }

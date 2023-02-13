@@ -1,71 +1,55 @@
 /**************variables***********/
-@import "base", "estilos-generales", "variables", "carrusel", "header","video", "noticias", "contacto", "footer";
+@import "base", "estilos-generales", "variables", "medias-querry", "carrusel", "header", "video", "contacto", "accordion", "footer";
 
 
-/*************************************************principal**********************/
-.index {
-    font-family: $secondary-font-family;
-    width: 100%;
-    display: flex;
-    flex-flow: column;
-    align-content: center;
-
-    h1 {
-        font-family: $primary-font-family;
-        font-size: $large-font;
-        color: $primary-color;
-        text-decoration: line-through white;
-    }
-
-    h2 {
-        font-family: $primary-font-family;
-    }
-
-    h3 {
-        font-family: $secondary-font-family;
-        color: $primary-color;
-        font-size: $normal-font;
-        text-decoration: line-through;
-        translate: -50px 100px;
-    }
-
-    video {
-        position: fixed;
-        z-index: -1;
-        right: 0;
-        left: 0;
-        top: 0;
-        min-width: 100%;
-        min-height: 100%;
-    }
-
-    .intro {
-        font-size: $normal-font;
-        text-align: center;
-        margin-top: 10%;
-    }
-
-    .prologo {
-        margin-top: 15%;
-
-        p {
-            color: $secondary-color ;
-            font-size: $normal-font;
-
-            span {
-                color: $primary-color;
+/***********************principal**********************/
+.main {
+        .hero {
+            h1 {
+                @include h1;
+                animation: animate__pulse ease-in-out 1s;
+            }
+            h2 {
+                @include h2
             }
         }
-    }
+        .novedades {
+            .h3x {
+                background-color: $primary-color;
+            h3 {
+                @include h3;
+                text-align: center;
+                
+            }
+            }
+            h4 {
+                @include h4;
+            }
+            p {
+                @include p;
+            }
+            .card {
+                @include tarjetas;
+            }
+        }
+        .h3g {
+            background-color: $primary-color;
+            h3 {
+                @include h3;
+                text-align: center;
+            }
+        }
 }
 
 /********************sposts********************/
 
 .spots-main {
 
-    h1 {
-        color: $primary-color;
-        font-size: $large-font;
+    .intro-spots {
+
+        h1 {
+            @include h1
+        }
     }
 
     h4 {
@@ -73,9 +57,7 @@
     }
 
     h2 {
-        color: $primary-color;
-        text-decoration: line-through;
-
+        @include h2
     }
 
     p {
@@ -83,7 +65,12 @@
     }
 
     i {
-        color: $primary-color;
+        color: $secondary-color;
+        transition: all ease-in-out .5s;
+
+        &:hover {
+            font-size: $small-font;
+        }
     }
 
     .bari {
@@ -108,15 +95,110 @@
 
 /*********** empresa *************/
 
-main {
-    .historia-empresa {
-        background-color: $primary-color;
-        .titulo-somos {
-            h1 {
-                color: $primary-color;
-                font-family: $primary-font-family;
-            }
-           
+.main-nosotros {
+
+    .titulo-somos {
+        h1 {
+            @include h1
         }
+    }
+
+    .historia-empresa {
+        background-color: $secondary-color;
+
+        p {
+            font-weight: 500;
+            margin-top: 5rem;
+        }
+    }
+
+    .guias {
+        h2 {
+            color: $primary-color;
+        }
+
+        h4 {
+            color: $primary-color;
+            font-weight: 800;
+        }
+
+        img {
+            filter: alpha(opacity=50);
+            -moz-opacity: 0.5;
+            opacity: 0.5;
+            -khtml-opacity: 0.5;
+            transition: all ease-in .8s;
+
+            &:hover {
+                filter: alpha(opacity=100);
+                -moz-opacity: 1.0;
+                opacity: 1.0;
+                -khtml-opacity: 1.0;
+            }
+        }
+
+        .guia1 {
+            border-right: 5px solid $primary-color;
+        }
+
+        .guia3 {
+            border-right: 5px solid $primary-color;
+        }
+    }
+}
+
+/********************* academia *********************/
+
+
+.intro-academia {
+    background-color: white;
+
+    h1 {
+        @include h1
+    }
+
+    h2 {
+        @include h2
+    }
+}
+
+.prologo {
+
+    background-color: $primary-color;
+    font-size: $small-font;
+    font-family: $secondary-font-family;
+
+    p {
+
+        span {
+            color: $secondary-color;
+        }
+    }
+}
+
+.main-academia {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "foto clases" "foto tabla";
+
+    .foto {
+        border-right: 3px solid $primary-color;
+        grid-area: foto;
+    }
+
+    .clases {
+        background-color: $secondary-color;
+        height: 20rem;
+        grid-area: clases;
+
+        h3 {
+            @include h2
+        }
+    }
+
+    .tabla {
+        background-color: $secondary-color;
+        grid-area: tabla;
     }
 }
