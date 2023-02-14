@@ -1,13 +1,18 @@
-
-
-
-
+/****************** accordion *********/ 
 .accordion-body {
     background-color: $primary-color;
+    color: $text-color;
+    display: flex;
+    flex-flow: column;
+   
     a {
         text-decoration: none;
-        color: $secondary-color;
+        color: $text-color;
         font-weight: 700;
         text-align: center;
+    }
+
+    span {
+        color: $secondary-color;
     }
 }

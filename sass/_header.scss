@@ -12,18 +12,35 @@
         font-size: $normal-font;
     }
 
-    .collapse {
-        font-family: $secondary-font-family;
-        font-size: $small-font;
+    .menu {
 
-        ul {
-            li {
-                a {
-                    color: $text-color;
+        .container-fluid {
 
-                    &:hover {
-                        color: $secondary-color;
-                        text-decoration: line-through;
+            .navbar-toggler {
+                background-color: $text-color;
+                transition: all ease-in .5s;
+               
+
+                &:hover {
+                    background-color: $secondary-color;
+                }
+            }
+
+
+            .collapse {
+                font-family: $secondary-font-family;
+                font-size: $small-font;
+
+                ul {
+                    li {
+                        a {
+                            color: $text-color;
+
+                            &:hover {
+                                color: $secondary-color;
+                                text-decoration: line-through;
+                            }
+                        }
                     }
                 }
             }

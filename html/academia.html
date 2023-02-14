@@ -90,16 +90,16 @@
     </div>
     <!------------------------ main -------------------->
 
-    <main class="main-academia">
+    <main class="main-academia row">
 
-        <div class="foto">
+        <div class="foto col-md-6">
             <img class="img-fluid ms-3" src="../img/academia1.jpg" alt="foto filo nevado">
         </div>
 
-        <section class="clases container-fluid">
+        <section class="clases container-fluid col-6 col-md-6">
             <h3>paquetes y precios</h3>
 
-            <!------------------------ accordion ------------------->
+            <!------------------------ accordion clases ------------------->
 
             <div class="accordion" id="kt_accordion_1">
                 <div class="accordion-item">
@@ -109,14 +109,14 @@
                             aria-controls="kt_accordion_1_body_1">
                             principiantes
                         </button>
-
                     </h2>
                     <div id="kt_accordion_1_body_1" class="accordion-collapse collapse show"
                         aria-labelledby="kt_accordion_1_header_1" data-bs-parent="#kt_accordion_1">
                         <div class="accordion-body">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem reiciendis maiores ab eos totam
-                            dolorem dicta fugit perferendis consequatur illum sed ut molestias eaque qui et magnam in,
-                            odio beatae?
+                            Primeros pasos. introduccion al equipo, tecnica en zonas proximas a centros de ski.
+                            teoria y practica de nivologia.
+                            cupos de 2 a 6 por guia. <span> recomendable una semana. </span>
+                            <img src="../img/principiantes.jpg" class="ms-5" alt="foto de clase">
                             <div class="d-grid gap-2 d-md-block mt-2">
                                 <button class="btn btn-dark"> <a href="../index.html">reserva</a></button>
                             </div>
@@ -135,9 +135,9 @@
                     <div id="kt_accordion_1_body_2" class="accordion-collapse collapse"
                         aria-labelledby="kt_accordion_1_header_2" data-bs-parent="#kt_accordion_1">
                         <div class="accordion-body">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem reiciendis maiores ab eos totam
-                            dolorem dicta fugit perferendis consequatur illum sed ut molestias eaque qui et magnam in,
-                            odio beatae?
+                            Trabajos y simulacros en terreno. salidas de jornada completa. mas exigencia fisica.
+                            salida final con pernocte. duracion 2 semanas. <span> grupos de 4min. </span>
+                            <img src="../img/intermedio.jpg" alt="foto otra clase">
                             <div class="d-grid gap-2 d-md-block mt-2">
                                 <button class="btn btn-dark"> <a href="../index.html">reserva</a></button>
                             </div>
@@ -156,9 +156,10 @@
                     <div id="kt_accordion_1_body_3" class="accordion-collapse collapse"
                         aria-labelledby="kt_accordion_1_header_3" data-bs-parent="#kt_accordion_1">
                         <div class="accordion-body">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem reiciendis maiores ab eos totam
-                            dolorem dicta fugit perferendis consequatur illum sed ut molestias eaque qui et magnam in,
-                            odio beatae?
+                            Planificacion y logistica de expedicion. teoria y practica de primeros auxilios.
+                            expedicion de 3 o mas dias.
+                            <span> de 4 personas minimo </span>
+                            <img src="../img/avanzado.jpg" alt="foto clase avanzada">
                             <div class="d-grid gap-2 d-md-block mt-2">
                                 <button class="btn btn-dark"> <a href="../index.html">reserva</a></button>
                             </div>
@@ -170,46 +171,35 @@
 
         <!----------------------- tabla precios ------------------->
 
-        <table class="tabla container-fluid">
+        <table class="tabla container-fluid mt-5 col-sm-11">
             <thead>
                 <tr>
                     <th scope="col">#</th>
-                    <th scope="col">First</th>
-                    <th scope="col">Last</th>
-                    <th scope="col">Handle</th>
+                    <th scope="col">nivel</th>
+                    <th scope="col">pax</th>
+                    <th scope="col">precio</th>
                 </tr>
             </thead>
             <tbody class="table-group-divider">
                 <tr>
                     <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
+                    <td>principiantes</td>
+                    <td>4/8pax</td>
+                    <td>100usd</td>
                 </tr>
                 <tr>
                     <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
+                    <td>avanzados</td>
+                    <td>4/6pax</td>
+                    <td>1500 usd</td>
                 </tr>
                 <tr>
                     <th scope="row">3</th>
-                    <td colspan="2">Larry the Bird</td>
-                    <td>@twitter</td>
+                    <td colspan="2">avanzado</td>
+                    <td>2000 usd</td>
                 </tr>
             </tbody>
         </table>
-
-
-
-
-
-
-
-
-
-
-
     </main>
 
     <!------------------------------------- footer ---------------------------->
@@ -221,9 +211,9 @@
             <p>Bariloche, Rio Negro, Patagonia, Argentina</p>
         </div>
         <div>
-            <ul class="redes d-flex flex-row text-center>
+            <ul class="redes d-flex flex-row text-center">
                 <li><a href=" https://www.twitter.com" target="_blank"><i class="bi bi-twitter p-2"
-                    style="font-size: 2rem;"></i></a></li>
+                            style="font-size: 2rem;"></i></a></li>
                 <li><a href="https://www.facebook.com" target="_blank"><i class="bi bi-facebook p-2"
                             style="font-size: 2rem;"></i></a></li>
                 <li><a href="https://www.instagram.com" target="_blank"><i class="bi bi-instagram p-2"

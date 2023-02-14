@@ -8,26 +8,44 @@
   overflow-x: hidden;
 }
 
-h2 {
-  font-family: "Barrio", cursive;
-}
-
-h3 {
-  font-family: "Barriecito", cursive;
-  color: #EE5F23;
-  font-size: 3rem;
-  text-decoration: underline;
-}
-
 /************mixin***************/ /**************** medias quarry **************/
 @media (max-width: 600px) {
   /********** header *********/
   header .logo {
     display: none;
   }
+  /********** spts ****************/
+  .spots-main img {
+    display: none;
+  }
+  .spots-main .intro-spots .spots-tarjetas p {
+    font-size: 0.9rem;
+  }
+  /********** empresa *************/
+  .main-nosotros {
+    display: flex;
+    flex-direction: column;
+  }
   /********** footer *************/
+  .footer {
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+    padding: 5;
+  }
   .footer .legales {
     display: none;
+  }
+  .footer .redes li {
+    display: none;
+  }
+  .footer .links ul li {
+    font-size: 1rem;
+    padding: 5;
+  }
+  /************* academia ***********/
+  .main-academia .clases {
+    width: 100%;
   }
 }
 .slider {
@@ -60,14 +78,21 @@ h3 {
   font-family: "Barrio", cursive;
   font-size: 3rem;
 }
-.header .collapse {
+.header .menu .container-fluid .navbar-toggler {
+  background-color: #3EB9A0;
+  transition: all ease-in 0.5s;
+}
+.header .menu .container-fluid .navbar-toggler:hover {
+  background-color: #EE5F23;
+}
+.header .menu .container-fluid .collapse {
   font-family: "Barriecito", cursive;
   font-size: 2rem;
 }
-.header .collapse ul li a {
+.header .menu .container-fluid .collapse ul li a {
   color: #3EB9A0;
 }
-.header .collapse ul li a:hover {
+.header .menu .container-fluid .collapse ul li a:hover {
   color: #EE5F23;
   text-decoration: line-through;
 }
@@ -130,14 +155,21 @@ video {
   width: 50%;
 }
 
+/****************** accordion *********/
 .accordion-body {
   background-color: black;
+  color: #3EB9A0;
+  display: flex;
+  flex-flow: column;
 }
 .accordion-body a {
   text-decoration: none;
-  color: #EE5F23;
+  color: #3EB9A0;
   font-weight: 700;
   text-align: center;
+}
+.accordion-body span {
+  color: #EE5F23;
 }
 
 .footer {
@@ -218,15 +250,21 @@ video {
   border-radius: 5px;
   box-shadow: 7px 4px 2px 1px #3EB9A0;
 }
-.main .h3g {
+.main .seccion-fotos .h3g h3 {
   background-color: black;
-}
-.main .h3g h3 {
   font-family: "Barriecito", cursive;
   color: #EE5F23;
   font-size: 3rem;
   text-decoration: underline;
   text-align: center;
+}
+.main .seccion-fotos .galeria img {
+  border: 3px solid black;
+  filter: grayscale(100%);
+  transition: all ease-in 0.5s;
+}
+.main .seccion-fotos .galeria img:hover {
+  filter: grayscale(0%);
 }
 
 /********************sposts********************/
@@ -325,28 +363,23 @@ video {
 }
 
 .prologo {
-  background-color: black;
+  background-color: #EE5F23;
   font-size: 2rem;
   font-family: "Barriecito", cursive;
+}
+.prologo p {
+  color: #3EB9A0;
 }
 .prologo p span {
   color: #EE5F23;
 }
 
-.main-academia {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: "foto clases" "foto tabla";
-}
 .main-academia .foto {
-  border-right: 3px solid black;
-  grid-area: foto;
+  border-right: 3px solid #3EB9A0;
+  border-radius: 10px;
 }
 .main-academia .clases {
   background-color: #EE5F23;
-  height: 20rem;
-  grid-area: clases;
 }
 .main-academia .clases h3 {
   color: #3EB9A0;
@@ -354,8 +387,9 @@ video {
   font-family: "Barrio", cursive;
 }
 .main-academia .tabla {
-  background-color: #EE5F23;
-  grid-area: tabla;
+  background-color: black;
+  color: #3EB9A0;
+  border: 3px solid #3EB9A0;
 }
 
 /*# sourceMappingURL=estilo.css.map */

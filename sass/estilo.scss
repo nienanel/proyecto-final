@@ -4,41 +4,64 @@
 
 /***********************principal**********************/
 .main {
-        .hero {
-            h1 {
-                @include h1;
-                animation: animate__pulse ease-in-out 1s;
-            }
-            h2 {
-                @include h2
-            }
+   
+    .hero {
+        h1 {
+            @include h1;
+            animation: animate__pulse ease-in-out 1s;
         }
-        .novedades {
-            .h3x {
-                background-color: $primary-color;
-            h3 {
-                @include h3;
-                text-align: center;
-                
-            }
-            }
-            h4 {
-                @include h4;
-            }
-            p {
-                @include p;
-            }
-            .card {
-                @include tarjetas;
-            }
+
+        h2 {
+            @include h2
         }
-        .h3g {
+    }
+
+    .novedades {
+        .h3x {
             background-color: $primary-color;
+
             h3 {
+                @include h3;
+                text-align: center;
+
+            }
+        }
+
+        h4 {
+            @include h4;
+        }
+
+        p {
+            @include p;
+        }
+
+        .card {
+            @include tarjetas;
+        }
+    }
+
+    .seccion-fotos {
+
+        .h3g {
+            h3 {
+                background-color: $primary-color;
                 @include h3;
                 text-align: center;
             }
         }
+
+        .galeria {
+            img {
+                border: 3px solid $primary-color;
+                filter: grayscale(100%);
+                transition: all ease-in .5s;
+
+                &:hover {
+                    filter: grayscale(0%);
+                }
+            }
+        }
+    }
 }
 
 /********************sposts********************/
@@ -59,7 +82,7 @@
     h2 {
         @include h2
     }
-
+    
     p {
         font-size: $small-font;
     }
@@ -164,11 +187,12 @@
 
 .prologo {
 
-    background-color: $primary-color;
+    background-color: $secondary-color;
     font-size: $small-font;
     font-family: $secondary-font-family;
 
     p {
+        color: $text-color;
 
         span {
             color: $secondary-color;
@@ -177,28 +201,23 @@
 }
 
 .main-academia {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "foto clases" "foto tabla";
 
     .foto {
-        border-right: 3px solid $primary-color;
-        grid-area: foto;
+        border-right: 3px solid $text-color;
+        border-radius: 10px;
     }
 
     .clases {
         background-color: $secondary-color;
-        height: 20rem;
-        grid-area: clases;
-
+    
         h3 {
             @include h2
         }
     }
 
     .tabla {
-        background-color: $secondary-color;
-        grid-area: tabla;
+        background-color: $primary-color;
+        color: $text-color;
+        border: 3px solid $text-color;
     }
 }
