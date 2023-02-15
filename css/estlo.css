@@ -1,0 +1,371 @@
+/**************variables***********/ /*********************************************general*******************************/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.body {
+  overflow-x: hidden;
+}
+
+/************mixin***************/ /**************** medias quarry **************/
+/**************** movil **************/
+@media (max-width: 600px) {
+  /********** header *********/
+  header .logo {
+    display: none;
+  }
+  /********** empresa *************/
+  .main-nosotros {
+    display: flex;
+    flex-direction: column;
+  }
+  /********** footer *************/
+}
+/****************** tablet **************/
+.slider {
+  width: 100vw;
+  border-top: 4px solid #EE5F23;
+  border-bottom: 3px solid #EE5F23;
+  font-family: "Barriecito", cursive;
+}
+.slider a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #EE5F23;
+  opacity: 50%;
+  transition: all ease-in-out 1s;
+}
+.slider a:hover {
+  font-size: 2rem;
+  opacity: 100%;
+}
+
+/************ header ***********/
+.header {
+  background-color: black;
+  color: #EE5F23;
+  width: 100vh;
+  margin-left: 0;
+  margin-right: 0;
+  min-height: 100vh h1;
+  min-height-font-family: "Barrio", cursive;
+  min-height-font-size: 3rem;
+}
+.header .menu .container-fluid .navbar-toggler {
+  background-color: #3EB9A0;
+  transition: all ease-in 0.5s;
+}
+.header .menu .container-fluid .navbar-toggler:hover {
+  background-color: #EE5F23;
+}
+.header .menu .container-fluid .collapse {
+  font-family: "Barriecito", cursive;
+  font-size: 2rem;
+}
+.header .menu .container-fluid .collapse ul li a {
+  color: #3EB9A0;
+}
+.header .menu .container-fluid .collapse ul li a:hover {
+  color: #EE5F23;
+  text-decoration: line-through;
+}
+.header .iconos ul {
+  list-style-type: none;
+  display: flex;
+}
+.header .iconos i {
+  color: #3EB9A0;
+  transition: all ease-in-out 0.5s;
+}
+.header .iconos i:hover {
+  font-size: 3rem;
+  color: #EE5F23;
+}
+
+/************ video de fonde **************/
+video {
+  position: fixed;
+  z-index: -1;
+  right: 0;
+  left: 0;
+  top: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+/*************contacto************/
+.formulario {
+  background-color: black;
+  border: 3px solid black;
+  border-radius: 5px;
+  box-shadow: 7px 4px 2px 1px #3EB9A0;
+}
+.formulario .campo {
+  display: block;
+  width: 50%;
+  padding: 10px;
+  margin: 10px auto;
+}
+.formulario .boton {
+  color: white;
+  background-color: black;
+  padding: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all ease-in-out 0.5s;
+}
+.formulario .boton:hover {
+  color: gray;
+}
+
+.ubicacion .visitanos {
+  border: 3px solid black;
+  border-radius: 5px;
+  box-shadow: 7px 4px 2px 1px #3EB9A0;
+  width: 50%;
+}
+
+/****************** accordion *********/
+.accordion-body {
+  background-color: black;
+  color: #3EB9A0;
+  display: flex;
+  flex-flow: column;
+}
+.accordion-body a {
+  text-decoration: none;
+  color: #3EB9A0;
+  font-weight: 700;
+  text-align: center;
+}
+.accordion-body span {
+  color: #EE5F23;
+}
+
+.footer {
+  background-color: black;
+  font-size: 2rem -1rem;
+  padding: 2rem;
+  width: 100%;
+  height: 10rem;
+  position: relative;
+  bottom: 0;
+  border-top: 4px solid #3EB9A0;
+}
+.footer .legales {
+  color: #3EB9A0;
+}
+.footer .redes li {
+  list-style-type: none;
+}
+.footer .redes li a {
+  color: #3EB9A0;
+  display: flex;
+  justify-content: center;
+  transition: all ease-in-out 1s;
+}
+.footer .redes li a:hover {
+  color: #EE5F23;
+  translate: 0 -1rem;
+}
+.footer .links ul {
+  list-style-type: none;
+}
+.footer .links ul li a {
+  font-family: "Barriecito", cursive;
+  font-size: 2rem -1em;
+  text-decoration: none;
+  color: #EE5F23;
+  text-transform: uppercase;
+  color: #3EB9A0;
+}
+.footer .links ul li a:hover {
+  color: #3EB9A0;
+  text-decoration: underline;
+}
+
+/***********************principal**********************/
+.main .hero h1 {
+  color: #EE5F23;
+  font-family: "Barrio", cursive;
+  font-size: 6rem;
+  animation: animate__pulse ease-in-out 1s;
+}
+.main .hero h2 {
+  color: #3EB9A0;
+  text-decoration: underline;
+  font-family: "Barrio", cursive;
+}
+.main .novedades .h3x {
+  background-color: black;
+}
+.main .novedades .h3x h3 {
+  font-family: "Barriecito", cursive;
+  color: #EE5F23;
+  font-size: 3rem;
+  text-decoration: underline;
+  text-align: center;
+}
+.main .novedades h4 {
+  font-family: "Barriecito", cursive;
+  color: #3EB9A0;
+}
+.main .novedades p {
+  color: black;
+  font-weight: 400;
+  font-size: 2rem;
+}
+.main .novedades .card {
+  border: 3px solid black;
+  border-radius: 5px;
+  box-shadow: 7px 4px 2px 1px #3EB9A0;
+}
+.main .seccion-fotos .h3g h3 {
+  background-color: black;
+  font-family: "Barriecito", cursive;
+  color: #EE5F23;
+  font-size: 3rem;
+  text-decoration: underline;
+  text-align: center;
+}
+.main .seccion-fotos .galeria img {
+  border: 3px solid black;
+  filter: grayscale(100%);
+  transition: all ease-in 0.5s;
+}
+.main .seccion-fotos .galeria img:hover {
+  filter: grayscale(0%);
+}
+
+/********************sposts********************/
+.spots-main .intro-spots h1 {
+  color: #EE5F23;
+  font-family: "Barrio", cursive;
+  font-size: 6rem;
+}
+.spots-main .intro-spots h2 {
+  color: #3EB9A0;
+  text-decoration: underline;
+  font-family: "Barrio", cursive;
+}
+.spots-main h4 {
+  color: black;
+}
+.spots-main .spots-tarjetas p {
+  color: aquamarine;
+}
+.spots-main .spots-tarjetas i {
+  color: #EE5F23;
+  transition: all ease-in-out 0.5s;
+}
+.spots-main .spots-tarjetas i:hover {
+  font-size: 2rem;
+}
+.spots-main .spots-tarjetas .bari {
+  border: 5px solid black;
+  box-shadow: 6px 5px 2px 0 #EE5F23;
+  border-radius: 5px;
+}
+.spots-main .spots-tarjetas .mendoza {
+  border: 5px solid black;
+  box-shadow: 0 2px 5px 6px #EE5F23;
+  border-radius: 5px;
+}
+.spots-main .spots-tarjetas .chile {
+  border: 5px solid black;
+  box-shadow: 6px 5px 2px 0 #EE5F23;
+  border-radius: 5px;
+}
+
+/*********** empresa *************/
+.main-nosotros .titulo-somos h1 {
+  color: #EE5F23;
+  font-family: "Barrio", cursive;
+  font-size: 6rem;
+}
+.main-nosotros .historia-empresa {
+  background-color: #EE5F23;
+}
+.main-nosotros .historia-empresa p {
+  font-weight: 500;
+  margin-top: 5rem;
+}
+.main-nosotros .guias h2 {
+  color: black;
+}
+.main-nosotros .guias h4 {
+  color: black;
+  font-weight: 800;
+}
+.main-nosotros .guias img {
+  filter: alpha(opacity=50);
+  -moz-opacity: 0.5;
+  opacity: 0.5;
+  -khtml-opacity: 0.5;
+  transition: all ease-in 0.8s;
+}
+.main-nosotros .guias img:hover {
+  filter: alpha(opacity=100);
+  -moz-opacity: 1;
+  opacity: 1;
+  -khtml-opacity: 1;
+}
+.main-nosotros .guias .guia1 {
+  border-right: 5px solid black;
+}
+.main-nosotros .guias .guia3 {
+  border-right: 5px solid black;
+}
+
+/********************* academia *********************/
+.intro-academia {
+  background-color: white;
+}
+.intro-academia h1 {
+  color: #EE5F23;
+  font-family: "Barrio", cursive;
+  font-size: 6rem;
+}
+.intro-academia h2 {
+  color: #3EB9A0;
+  text-decoration: underline;
+  font-family: "Barrio", cursive;
+}
+
+.prologo {
+  background-color: #EE5F23;
+  font-size: 2rem;
+  font-family: "Barriecito", cursive;
+}
+.prologo p {
+  color: #3EB9A0;
+}
+.prologo p span {
+  color: #EE5F23;
+}
+
+.main-academia .foto {
+  border-right: 3px solid #3EB9A0;
+  border-radius: 10px;
+}
+.main-academia .clases {
+  background-color: #EE5F23;
+}
+.main-academia .clases h3 {
+  color: #3EB9A0;
+  text-decoration: underline;
+  font-family: "Barrio", cursive;
+}
+.main-academia .tabla {
+  background-color: black;
+  color: #3EB9A0;
+  border: 3px solid #3EB9A0;
+}
+
+/***************** contacto *************/
+
+/*# sourceMappingURL=estlo.css.map */

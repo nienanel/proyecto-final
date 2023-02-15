@@ -4,7 +4,7 @@
 
 /***********************principal**********************/
 .main {
-   
+
     .hero {
         h1 {
             @include h1;
@@ -73,46 +73,50 @@
         h1 {
             @include h1
         }
+
+        h2 {
+            @include h2
+        }
     }
 
     h4 {
         color: $primary-color;
     }
 
-    h2 {
-        @include h2
-    }
-    
-    p {
-        font-size: $small-font;
-    }
+    .spots-tarjetas {
 
-    i {
-        color: $secondary-color;
-        transition: all ease-in-out .5s;
-
-        &:hover {
-            font-size: $small-font;
+        p {
+            color: aquamarine;
         }
-    }
 
-    .bari {
-        border: 5px solid $primary-color;
-        box-shadow: 6px 5px 2px 0 $secondary-color;
-        border-radius: 5px;
-    }
+        i {
+            color: $secondary-color;
+            transition: all ease-in-out .5s;
+
+            &:hover {
+                font-size: $small-font;
+            }
+        }
+
+        .bari {
+
+            border: 5px solid $primary-color;
+            box-shadow: 6px 5px 2px 0 $secondary-color;
+            border-radius: 5px;
+        }
 
 
-    .mendoza {
-        border: 5px solid $primary-color;
-        box-shadow: 0 2px 5px 6px $secondary-color;
-        border-radius: 5px;
-    }
+        .mendoza {
+            border: 5px solid $primary-color;
+            box-shadow: 0 2px 5px 6px $secondary-color;
+            border-radius: 5px;
+        }
 
-    .chile {
-        border: 5px solid $primary-color;
-        box-shadow: 6px 5px 2px 0 $secondary-color;
-        border-radius: 5px;
+        .chile {
+            border: 5px solid $primary-color;
+            box-shadow: 6px 5px 2px 0 $secondary-color;
+            border-radius: 5px;
+        }
     }
 }
 
@@ -209,7 +213,7 @@
 
     .clases {
         background-color: $secondary-color;
-    
+
         h3 {
             @include h2
         }
@@ -221,3 +225,6 @@
         border: 3px solid $text-color;
     }
 }
+
+/***************** contacto *************/
+

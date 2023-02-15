@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>academia</title>
-    <meta name="description" content="seccion para reservar clases especiales">
-    <!------------------------ css ----------------------------->
+    <title>reservas</title>
+    <meta name="description" content="seccion de reservas y consultas">
+    <!------------------------css------------------------------>
     <link rel="stylesheet" href="../css/estilo.css">
     <!--------------------- fuentes --------------------------->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,9 +26,9 @@
     
 </head>
 
-<body class="body">
+<body>
 
-    <!-------------------------- header ------------------------------>
+    <!---------------------- header ----------------------->
 
     <header class="header container-fluid row">
         <h1 class="logo animate__heartBeat mt-2 ms-5 col-4 col">andes freeride</h1>
@@ -78,133 +78,60 @@
         </div>
     </header>
 
-    <!------------------------ prologo -------------------->
+    <main>
+        <div class="reservas grid text-center">
+            <div class="hero-reservas col-sm-12 text-center mt-5">
+                <h1>contactanos</h1>
+                <h2>abierto para temporada 2023</h2>
+            </div>
 
-    <div class="intro-academia text-center mt-5">
-        <h1>La academia</h1>
-        <h2>¿ignagura temporada 2023!</h2>
-    </div>
-    <div class="prologo text-center p-2 mb-5">
-        <p>Esta temporada comenzamos un nuevo pryecto. clinicas y clases particulares o
-            grupales. Para cada nivel tenemos los mejores programas, cn contenido practico y
-            teorico para que puedas superar tus limites y progresar en el <span>freeride</span>.
-        </p>
-    </div>
-    <!------------------------ main -------------------->
+            <section class="contacto g-col-6 g-col-md-4">
+                <div
+                    class="formulario container-fluid text-center mt-5 ms-5 shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+                    <div>
+                        <h2 class="mt-3">consultas y reservas</h2>
+                    </div>
+                    <form action="contacto">
+                        <div>
+                            <label for="nombre y apellido">nombres</label>
+                            <input type="text">
+                        </div>
+                        <div id="datos">
+                            <label for="email">email</label>
+                            <input type="email">
+                        </div>
+                        <div id="text">
+                            <textarea name="text" id="" cols="50" rows="10"> escriba aqui</textarea>
+                        </div>
+                        <div id="botones">
+                            <input class="btn btn-dark" type="submit" value="enviar">
+                            <input class="btn btn-dark" type="reset" value="recet">
+                        </div>
+                    </form>
+                    <div>
+            </section>
+            <section class="mapa g-col-6 g-col-md-4">
+                <div class="container-fluid text-center">
+                    <div>
+                        <h3 class="mt-5 me-5 animate__bounceInUp">ubicacion</h3>
+                    </div>
+                    <div>
+                        <iframe class="container-fluid"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7000.5332140824485!2d-71.47331710419697!3d-41.07308427495826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961a7725e413eb41%3A0x1c28673444d67c96!2sAerosilla%20Cerro%20Campanario!5e0!3m2!1ses!2sar!4v1675302753121!5m2!1ses!2sar"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+            </section>
 
-    <main class="main-academia row">
-
-        <div class="foto col-md-6">
-            <img class="img-fluid ms-3" src="../img/academia1.jpg" alt="foto filo nevado">
+            <div class="imagen">
+                <img src="../img/contacto1.jpg" class="img-fluid" alt="foto re copada">
+            </div>
         </div>
 
-        <section class="clases container-fluid col-6 col-md-6">
-            <h3>paquetes y precios</h3>
 
-            <!------------------------ accordion clases ------------------->
-
-            <div class="accordion" id="kt_accordion_1">
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="kt_accordion_1_header_1">
-                        <button class="accordion-button fs-4 fw-semibold" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#kt_accordion_1_body_1" aria-expanded="true"
-                            aria-controls="kt_accordion_1_body_1">
-                            principiantes
-                        </button>
-                    </h2>
-                    <div id="kt_accordion_1_body_1" class="accordion-collapse collapse show"
-                        aria-labelledby="kt_accordion_1_header_1" data-bs-parent="#kt_accordion_1">
-                        <div class="accordion-body">
-                            Primeros pasos. introduccion al equipo, tecnica en zonas proximas a centros de ski.
-                            teoria y practica de nivologia.
-                            cupos de 2 a 6 por guia. <span> recomendable una semana. </span>
-                            <img src="../img/principiantes.jpg" class="ms-5" alt="foto de clase">
-                            <div class="d-grid gap-2 d-md-block mt-2">
-                                <button class="btn btn-dark"> <a href="../index.html">reserva</a></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="kt_accordion_1_header_2">
-                        <button class="accordion-button fs-4 fw-semibold collapsed" type="button"
-                            data-bs-toggle="collapse" data-bs-target="#kt_accordion_1_body_2" aria-expanded="false"
-                            aria-controls="kt_accordion_1_body_2">
-                            intermedios
-                        </button>
-                    </h2>
-                    <div id="kt_accordion_1_body_2" class="accordion-collapse collapse"
-                        aria-labelledby="kt_accordion_1_header_2" data-bs-parent="#kt_accordion_1">
-                        <div class="accordion-body">
-                            Trabajos y simulacros en terreno. salidas de jornada completa. mas exigencia fisica.
-                            salida final con pernocte. duracion 2 semanas. <span> grupos de 4min. </span>
-                            <img src="../img/intermedio.jpg" alt="foto otra clase">
-                            <div class="d-grid gap-2 d-md-block mt-2">
-                                <button class="btn btn-dark"> <a href="../index.html">reserva</a></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="kt_accordion_1_header_3">
-                        <button class="accordion-button fs-4 fw-semibold collapsed" type="button"
-                            data-bs-toggle="collapse" data-bs-target="#kt_accordion_1_body_3" aria-expanded="false"
-                            aria-controls="kt_accordion_1_body_3">
-                            expertos
-                        </button>
-                    </h2>
-                    <div id="kt_accordion_1_body_3" class="accordion-collapse collapse"
-                        aria-labelledby="kt_accordion_1_header_3" data-bs-parent="#kt_accordion_1">
-                        <div class="accordion-body">
-                            Planificacion y logistica de expedicion. teoria y practica de primeros auxilios.
-                            expedicion de 3 o mas dias.
-                            <span> de 4 personas minimo </span>
-                            <img src="../img/avanzado.jpg" alt="foto clase avanzada">
-                            <div class="d-grid gap-2 d-md-block mt-2">
-                                <button class="btn btn-dark"> <a href="../index.html">reserva</a></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!----------------------- tabla precios ------------------->
-
-        <table class="tabla container-fluid mt-5 col-sm-11">
-            <thead>
-                <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">nivel</th>
-                    <th scope="col">pax</th>
-                    <th scope="col">precio</th>
-                </tr>
-            </thead>
-            <tbody class="table-group-divider">
-                <tr>
-                    <th scope="row">1</th>
-                    <td>principiantes</td>
-                    <td>4/8pax</td>
-                    <td>100usd</td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>avanzados</td>
-                    <td>4/6pax</td>
-                    <td>1500 usd</td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td colspan="2">avanzado</td>
-                    <td>2000 usd</td>
-                </tr>
-            </tbody>
-        </table>
     </main>
 
-    <!------------------------------------- footer ---------------------------->
+
     <footer class="footer d-flex  justify-content-between mt-5 text-center">
 
         <div class="legales mt-1">
@@ -239,14 +166,6 @@
     </footer>
 
 
-
-
-
-
-
-
-
-
     <!---------------------- scripts ----------------------->
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
@@ -259,6 +178,7 @@
     <script>
         AOS.init();
     </script>
+
 </body>
 
 </html>

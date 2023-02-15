@@ -1,29 +1,13 @@
 /**************** medias quarry **************/
 
+/**************** movil **************/
+
 @media (max-width: 600px) {
 
     /********** header *********/
     header {
         .logo {
             display: none;
-        }
-    }
-
-    /********** spts ****************/
-    .spots-main {
-
-        img {
-            display: none;
-        }
-
-        .intro-spots {
-
-            .spots-tarjetas {
-
-                p {
-                    font-size: .9rem;
-                }
-            }
         }
     }
 
@@ -36,39 +20,12 @@
 
     /********** footer *************/
 
-    .footer {
-        margin-bottom: 0;
-        display: flex;
-        justify-content: center;
-        padding: 5;
 
-        .legales {
-            display: none;
-        }
+}
 
-        .redes {
+/****************** tablet **************/
 
-            li {
-                display: none;
-            }
-        }
+@media (min-width: 600px) and (max-width:900px) {
 
-        .links {
-
-            ul {
-                li {
-                    font-size: 1rem;
-                    padding: 5;
-                }
-            }
-        }
-    }
-
-    /************* academia ***********/
-    .main-academia {
-        
-        .clases {
-            width: 100%;
-        }
-    }
+    
 }
